@@ -7,10 +7,9 @@ import math
 
 def calculateDistanceToHorizon():
 
-    # Get distance and time inputs from user
-    height = float(input("What is the height from the ground (in centimeters)"))
-
     try:
+        # Get distance and time inputs from user
+        height = float(input("What is the height from the ground (in centimeters)"))
         # Use Distance Formula for the baseball (D = sqrt(0.126 * H))
         calculation = (math.sqrt(0.126 * height)) / 10000
 
