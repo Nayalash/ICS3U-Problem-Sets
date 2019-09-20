@@ -1,7 +1,7 @@
 # Author: Nayalash Mohammad
 # Date: September 19 2019
 # File Name: rect_area.py
-# Description: A simple program that computes the area of a rectangle based on the length and width.
+# Description: A program that computes the area of a rectangle based on the height and width.
 
 
 def calculateRectangleArea():
@@ -13,9 +13,9 @@ def calculateRectangleArea():
 
   try:
     # Use Area Formula for rectangle (A = H * W)
-    calculation = int(height) * int(width)
+    calculation = float(height) * float(width)
 
-    print("The area of the reactangle is: " + str(calculation) + " meters squared")
+    print("The area of the rectangle is: " + str(calculation) + " meters squared")
 
     # If there is an error (invalid value), print message to user.  
   except ValueError:
