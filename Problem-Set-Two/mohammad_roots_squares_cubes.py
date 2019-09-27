@@ -1,6 +1,6 @@
 # Author: Nayalash Mohammad
 # Date: September 26 2019
-# File Name: sqaures_roots_cubes.py
+# File Name: squares_roots_cubes.py
 # Description: A program that asks a user for a range
 # and prints the square, root and cube of all the numbers
 #in that range.
