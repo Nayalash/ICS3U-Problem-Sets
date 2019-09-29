@@ -7,7 +7,7 @@
 try:
     number = int(input("Enter a number: "))
 except ValueError:
-    print("Invalid Input (ONLY INTEGER TYPE IS ALLOWED")
+    print("Invalid Input (ONLY INTEGER TYPE IS ALLOWED)")
 
 if ((number % 2) == 0):
     print("This number is even...")
