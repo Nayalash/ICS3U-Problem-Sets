@@ -7,9 +7,10 @@
 # Ask user for a number
 number = int(input("Enter a number: "))
 
+for i in range(number): # Vertical
 
-for i in range(number):
      for i in range(number):
-          print('*', end=' ')
-     print(' ')
+          print('*', end=' ') # Horizontal
+
+     print(' ') # So * can be spaced out
     

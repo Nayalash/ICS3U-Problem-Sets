@@ -7,6 +7,6 @@
 # Ask user for a number
 number = int(input("Enter a number: "))
 
-
+# Print in horizontal line for the number user entered
 for i in range(number):
     print('*', end='')
