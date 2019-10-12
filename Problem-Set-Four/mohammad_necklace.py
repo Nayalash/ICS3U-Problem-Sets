@@ -1,8 +1,7 @@
 # Name: Nayalash Mohammad
 # Date: October 12 2019
 # File Name: necklace.py
-# Description: A calculator program that can handle add/sub/div/mult/exp/mod
-# operations, and continuously runs.
+# Description: A program that follows the necklace algorithm
 
 # Ask user for their first and second number
 numberOne = int(input("Enter first number: "))
