@@ -3,7 +3,7 @@
 # File Name: factorial.py
 # Description: A program that computes the factorial for a number
 
-number = int(input("Enter Number: "))
+number = int(input("Enter Factorial: !"))
 
 # Total number which will be incremented (multiplied) by every positive integer value above 0 and saved in the variable
 total = 1
@@ -15,4 +15,4 @@ for curr in range(1, number + 1):
     total *= curr
 
 # When the factorial is calculated, print it
-print(total)
+print(f"""The Factorial for !{number} is {total}""")
