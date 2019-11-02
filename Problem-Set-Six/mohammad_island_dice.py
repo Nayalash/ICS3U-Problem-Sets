@@ -3,7 +3,6 @@
 # File Name: island_dice.py
 # Description: A program that follows the island dice algorithm.
 
-
 # Use random library to use randomint function
 import random
 
@@ -22,9 +21,9 @@ def main(shells):
             continue
         # Ask them for high or low prediction
         bet = input("Do you predict a high or low number?: ")
-        
+
         betIsHigh = False
-        
+
         if(bet.lower() == "high"):
             betIsHigh = True
 
