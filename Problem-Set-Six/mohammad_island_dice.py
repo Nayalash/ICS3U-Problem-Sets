@@ -12,15 +12,23 @@ shells = 1000
 def main(shells):
 
     while True:
-        # Ask how many shells to risk
-        riskAmount = int(input("How many shells would you like to risk?: "))
+        try:
+            # Ask how many shells to risk
+            riskAmount = int(input("How many shells would you like to risk?: "))
+        except ValueError:
+            print("Invalid Input")
+            exit()
 
         # Check if user is not going over their total number of shells
         if riskAmount > shells:
             print("You don't have enough shells!")
             continue
-        # Ask them for high or low prediction
-        bet = input("Do you predict a high or low number?: ")
+        try:    
+            # Ask them for high or low prediction
+            bet = input("Do you predict a high or low number?\nTo bet High, type `high`. To bet Low, press any key...\n")
+        except ValueError:
+            print("Invalid Input")
+            exit()
 
         betIsHigh = False
 

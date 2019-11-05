@@ -29,7 +29,7 @@ Features:
 
 Restrictions:
 
-    • No Exception Handling if user gives an input outside range or invalid DATA TYPE input occurs.
+    • No Restrictions
 
 Known Errors:
 

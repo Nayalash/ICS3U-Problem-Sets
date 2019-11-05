@@ -24,8 +24,12 @@ def main():
             print("There are currently " + str(stoneAmount) + " stones.")
 
         if(playerTurn):
-            # Ask for how many stones to take
-            stonePick = int(input("How many stones would you like to take?: "))
+            try:
+                # Ask for how many stones to take
+                stonePick = int(input("How many stones would you like to take?: "))
+            except ValueError:
+                print("Invalid Input")
+                exit()
 
             # Verify that those amount of stones can be taken
             if(stonePick > 3 or stonePick < 1 or (stonePick > 2 and stoneAmount < 3)):
