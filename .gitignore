@@ -1,5 +1,7 @@
+# Ignore IntelliJ Directory
 .idea
 
+# Ignore MacOS File Script(s)
 **/.DS_Store
 
 # Byte-compiled / optimized / DLL files
