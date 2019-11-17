@@ -3,49 +3,67 @@
 # File Name: database.py
 # Description: A program that takes five names, and lets you try out DB operations.
 
+# Main Code
 def main():
     # Commands
     # display : will display all of them
     # displayspec [index] : will display a name at a certain index
     # edit [index] [newName] : edits index
     # and delete [index] : deletes at index
+
+    # Running Requirements
     running = True
     hasInitNames = False
     nameList = []
 
+    # Helper Method, to display names
     def display(nameList):
         print("Your names: ")
         for name in nameList:
             print(name.strip())
 
+    # On Standby For Command Inputs
     while running:
+
         if not hasInitNames:
+            # Ask and arrange the five names
             names = input("Please provide 5 names: ")
             nameList = names.split(",")
+            # Only accept five names
             nameList = nameList[:5]
-            display(nameList)
+
+            display(nameList) # Display
             hasInitNames = True
         else:
+            # Ask for command
             command = input()
+
+            # Display Command
             if command.lower() == "display":
                 display(nameList)
+            # Edit Command
             elif command.lower().startswith("edit"):
                 arguments = command.split(" ")
                 if len(arguments) > 2:
                     index = int(arguments[1])
+                    # Check for name and replace it
                     if(index < len(nameList) and index > -1):
                         newName = arguments[2]
                         oldName = nameList[index]
                         nameList[index] = newName
                         print(f"""Replaced name {oldName} with {newName}""")
+            # Display Spec Command
             elif command.lower().startswith("displayspec"):
                 arguments = command.split(" ")
+                # Display at specific index, verify first
                 if len(arguments) > 1:
                     index = int(arguments[1])
                     if(index < len(nameList) and index > -1):
                         print(f"""Name: {nameList[index]}""")
+            # Delete Command
             elif command.lower().startswith("delete"):
                 arguments = command.split(" ")
+                # Verify, than delete based on index
                 if len(arguments) > 1:
                     index = int(arguments[1])
                     if(index < len(nameList) and index > -1):
@@ -53,6 +71,7 @@ def main():
                         del nameList[index]
                         print(f"""Deleted name '{deletedName}""")
 
+            # Exception Checking
             else:
                 print("Command Not Valid Try Again....")
                 exit()
@@ -63,6 +82,7 @@ def menu():
     # Ask user for what they would like to do
     option = input()
 
+    # Answer based on commands
     if (option == "run"):
         main() # Run App
         menu()

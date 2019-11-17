@@ -10,7 +10,7 @@ Unit 2: Problem Set Eight, Question 3
 
 Programming Language: Python 3.7.6
 
-Description: --
+Description: A program that follows the traffic algorithm, provided by the problem set.
 
 Running File Name: mohammad_traffic.py
 
@@ -39,6 +39,7 @@ Known Errors:
 Implementation Details:
 
     • Used the concept of Arrays to efficiently store values.
+    ° Used For loops, to have generative data.
     • To have the continuously running menu, I applied the methodology of recursive functions.
 
 Additional Files:

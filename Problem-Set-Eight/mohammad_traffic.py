@@ -1,6 +1,12 @@
+# Name: Nayalash Mohammad
+# Date: November 07 2019
+# File Name: traffic.py
+# Description: A program that follows the traffic algorithm, provided by the problem set.
+
 # Import Random Lib To use Randint Function
 import random
 
+# Main Code
 def main():
     # Init Data Array and index counter
     data = []
@@ -28,6 +34,7 @@ def main():
 
     # Add The Signal into Array
     for signal in data:
+        # Store Based on Signal
         if not signal == 0:
             parsedData[index].append(signal)
         else:
@@ -37,6 +44,7 @@ def main():
     # Line Breaker
     print()
 
+    # Loop through Survey
     for num, survey in enumerate(parsedData):
         # Print the results for each survey
         print(f"""Stats for survey #{num + 1}""")
@@ -49,9 +57,11 @@ def main():
 
         # Calculate timings
         for i in survey:
+            # Iterates current time
             if i == 1:
                 currentTime += 1
             else:
+                # Evaluate Total Time
                 if currentTime > longestTime:
                     longestTime = currentTime
                 currentTime = 0
