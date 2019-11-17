@@ -12,7 +12,7 @@ Programming Language: Python 3.7.6
 
 Description: A program that takes four grade averages, and finds the total average.
 
-Running File Name: mohammad_morse.py
+Running File Name: mohammad_averageDB.py
 
 Program Assumptions: In order to run this program, you need a computer running either MacOS, Windows or Linux, with Python 3 or greater, having the Python Environmental Variable set to your PATH
 
@@ -37,7 +37,7 @@ Known Errors:
 
 Implementation Details:
 
-    • Used the concept of Dictionaries to efficiently store values.
+    • Used the concept of String Splicing
     • To have the continuously running menu, I applied the methodology of recursive functions.
 
 Additional Files:
